@@ -7,7 +7,7 @@ export default function Game() {
   const [newArr, setNewArr] = useState([]);
 
   useEffect(() => {
-    setNewArr(history[history.length]);
+    setNewArr(history[history.length-1]);
   }, [history]);
 
   const onPlay = (newMove) => {
